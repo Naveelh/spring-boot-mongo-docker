@@ -46,6 +46,18 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	<distributionManagement>
+    <repository>
+            <id>deployment</id>
+            <name>Internal Releases</name>
+            <url>http://3.6.160.213:8081/nexus/content/repositories/SAMPLE1/</url>
+        </repository>
+        <snapshotRepository>
+            <id>deployment</id>
+            <name>Internal Snapshot Releases</name>
+            <url>http://3.6.160.213:8081/nexus/content/repositories/99/</url>
+        </snapshotRepository>
+    </distributionManagement>
 	<build>
 		<plugins>
 			<plugin>
